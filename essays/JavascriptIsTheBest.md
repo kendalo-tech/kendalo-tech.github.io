@@ -11,7 +11,7 @@ labels:
 ---
 
 
-*Javascript is quite simply put, the best coding language I have learned (so far). *
+*Javascript is quite simply put, the best coding language I have learned (so far).*
 
 Going through college, and learning languages such as Java, C, and C++, it was easy to see that coding languages were very tedious and required very precise specifications when creating variables or functions. For example, a function would require a specific return type such as void, int, or string. Everyday struggles such as having to typecast a variable from one data type to another are now gone with Javascript. 
 
