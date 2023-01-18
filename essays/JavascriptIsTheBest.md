@@ -1,18 +1,21 @@
 ---
 layout: essay
 type: essay
-title: "The difficult things will always be difficult"
+title: "Javascript is a Breath of Fresh Air"
 # All dates must be YYYY-MM-DD format!
-date: 2016-02-06
+date: 2023-01-17
 published: true
 labels:
-  - Engineering
+  - Software Engineering
+  - Coding
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
 
-*Difficulty: a thing that is hard to accomplish, deal with, or understand.*
+*Javascript is quite simply put, the best coding language I have learned (so far). *
 
+Going through college, learning languages such as Java, C, and C++, it was easy to see that coding languages were very tedious and required very precise specifications when creating variables or functions. For example, a function would require a specific return type such as void, int, or string. Everyday struggles such as having to typecast a variable from one datatype to another is now gone with Javascript. 
+
+As I started FreeCodeCamp, I expected Javascript to be your typical program with specific labels for everything. However, I was quickly proved wrong. One of the first tutorials shows you how to declare varaibles and I was shocked to see that you basically had 2 options to choose from. 
 One of my friends asked the question earlier last week -- why is it so hard to be an officer for the student branch? Why is so hard compared to working at my on-campus job? This question came after he struggled a little with bookkeeping for the student organization.
 
 Now I gave him the standard answer - being an officer of an organization requires that you manage your time between school and work. There isn't anyone telling you what to do. It's the answer any good mentor would give, and is mostly true.
