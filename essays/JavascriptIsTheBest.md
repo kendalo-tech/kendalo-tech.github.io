@@ -5,11 +5,12 @@ title: "Javascript is a Breath of Fresh Air"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-17
 published: true
+image: img/JavaScriptScale.png
 labels:
   - Software Engineering
   - Coding
 ---
-image: img/JavaScriptScale.png
+
 
 *Javascript is quite simply put, the best coding language I have learned (so far).*
 
