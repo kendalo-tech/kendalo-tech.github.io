@@ -9,7 +9,7 @@ labels:
   - Software Engineering
   - Coding
 ---
-
+image: img/JavaScriptScale.png
 
 *Javascript is quite simply put, the best coding language I have learned (so far).*
 
