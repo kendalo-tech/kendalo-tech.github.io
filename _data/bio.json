@@ -16,12 +16,12 @@
   "interests": [
     { "name": "Software Engineering" },
     { "name": "Game Development" },
-    { "name": "Front-end Web development" }
+    { "name": "Web development" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "Java", "Javascript" ]
+      "keywords": [ "C","C++", "Java", "Javascript" ]
     },
     {
       "name": "Toolsets/OS",
@@ -35,7 +35,7 @@
       "studyType": "B.S.",
       "startDate": "2019-09-01",
       "endDate": "Present",
-      "courses": [ "Introduction to Computer Science II", "Discrete Math II", "Algorithms" 
+      "courses": [ "ICS 211: Data Structures", "ICS 241: Discrete Math II", "ICS 311: Algorithms", "ICS 314: Software Engineering", "EE 160: Programming for Engineers","EE 205: Object Oriented Programming","EE 260: Introduction to Digital Design", "EE 361: Digital Systems & Comp Design"
       ]
     }
   ],
@@ -43,23 +43,29 @@
     {
       "company": "Target",
       "position": "Guest Services Associate",
-      "website": "https://www.target.com/",
+      "website": "https://www.target.com",
       "startDate": "2020-10-21",
       "endDate": "2021-01-10",
-      "summary": "Help the customers with any issues they encountered, know how to return the customers items.",
+      "summary": "Help the customers with any issues they encountered, know how to return the customers items."
       
     }
   ],
   "volunteer": [
     {
-      "organization": "Professional Organization Involvement",
-      "website": "",
+      "organization": "Student Advisory Board",
+      "website": "www.ieeeatuhm.org/sab",
+      "startDate": "2020-08-30",
+      "endDate": "2022-01-10",
       "position": "Chair",
-      "highlights": [
-        "Member, ACM Manoa, 2022 - Present",
-        "Member, IEEE Student Branch, 2020-2022",
-        "Chair, Student Advisory Board, UH Manoa, 2020-2021"
-      ]
+      "summary": "The Student Advisory Board worked to implement the students concerns and suggestions."
+    },
+    {
+      "organization": "IEEE Student Branch",
+      "website": "www.ieeeatuhm.org/",
+      "startDate": "2020-08-30",
+      "endDate": "2022-01-10",
+      "position": "Board Member",
+      "summary": "IEEE contributes towards the students success. We try to engage the students with electrical and computer engineering opportunities."
     }
   ],
   
@@ -67,5 +73,5 @@
     {
       "name": "Available upon request"
     }
-  ],
+  ]
 }
