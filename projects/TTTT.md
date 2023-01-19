@@ -11,27 +11,45 @@ summary: "Tricky Tic-Tac-Toe is like basic Tic-Tac-Toe but with a twist. After e
 ---
 
 <div class="text-center p-4">
-  <img width="200px" src="../img/micromouse/micromouse-robot.png" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-robot-2.jpg" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-circuit.png" class="img-thumbnail" >
+  <img width="200px" src="../img/TTTT.png" class="img-thumbnail" >
+  <img width="200px" src="../img/TTTT3.png" class="img-thumbnail" >
+  <img width="300px" src="../img/TTT4.png" class="img-thumbnail" >
 </div>
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+## **Overview** 
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
+Tricky Tic-Tac-Toe is a game that I programmed for my ICS111 class. This is just like standard Tic-Tac-Toe but after each player's turn, there is a chance for a random square on the board to be cleared. The game is solely based off of RNG, having a 50% chance to remove a random space on the board completely makes the game uncontrollable. Creating such a game like this required a lot of different functions, along with knowing how to use the GUI that Java provides. Since it was one of the first programming courses, I had an extremely hard time using the GUI. When trying to draw lines or put things in the exact center, it was always a guessing game to myself. You can see that in the images, the two shapes are a tad bit off center due to myself having a hard time with the positioning. 
 
-Here is some code that illustrates how we read values from the line sensors:
+## **The Code Behind** 
+
+In this project, we needed to creat a GUI to display the Tic-Tac-Toe board along with coding an AI that will automatically place a character based on where the player went. The AI was not perfect however, it did know when the player only needed one more space to win. The AI had to know whether the game was won, lost, could be won, could be lost, along with which spaces were available. A lot of helper methods were made especially since spaces were constantly being deleted and then filled.
+
+These are three example methods that I used in to create this game. There was a lot of testing out arrays, along with using formulas to get the position values correct.
 
 ```cpp
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
+boolean won(char player) {
+            for (int i = 0; i < 8; ++i)
+                if (testRow(player, rows[i][0], rows[i][1]))
+                    return true;
+            return false;
+        }
+
+        boolean testRow(char player, int a, int b) {
+            return position[a] == player && position[b] == player
+                    && position[(a + b) / 2] == player;
+        }
+
+        void nextMove() { //ai
+            int r = findRow(X);
+            if (r < 0)
+                r = findRow(O);
+            if (r < 0) {
+                do
+                    r = random.nextInt(9);
+                while (position[r] != BLANK);
+            }
+            position[r] = X;
+        }
 ```
 
-You can learn more at the [UH Micromouse News Announcement](https://manoa.hawaii.edu/news/article.php?aId=2857).
+
