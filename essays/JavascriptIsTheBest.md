@@ -20,7 +20,6 @@ As I started FreeCodeCamp, I expected Javascript to be your typical program with
 ```
 let pi = 3.14;
 pi = '3.14';
-
 ```
 
 Imagine how easier it is to code things now that variables are not bounded to a specific data type. In both Java and C, this snippet of code would result in an error and you would only be able to accept one datatype per variable. Javascript is a brand new learning curve as there are a lot of different features from other languages, but (to me) the quality of life features are what separates it from the other languages.
