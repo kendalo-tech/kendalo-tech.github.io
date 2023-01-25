@@ -11,7 +11,7 @@ labels:
   - StackOverflow
 ---
 
-<img width="600px" class="rounded float-start pe-4" src="../img/BadQ.png">
+<img width="670px" class="rounded float-start pe-4" src="../img/BadQ.png">
 
 ## Are there actually stupid questions?
 
