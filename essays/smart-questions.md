@@ -4,14 +4,14 @@ type: essay
 title: "Do Bad Questions Really Exist?"
 # All dates must be YYYY-MM-DD format!
 date: 2023-01-24
-published: false
+published: true
 labels:
   - Questions
   - Answers
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/BadQ.png">
 
 ## Are there actually stupid questions?
 
