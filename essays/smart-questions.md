@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Do Bad Questions Really Exist?"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2023-01-24
 published: false
 labels:
   - Questions
@@ -13,87 +13,54 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## Are there actually stupid questions?
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+Did you ever have an instructor say the phrase "there are no stupid questions so don't be afraid to ask"? Everytime I heard that phrase I would instantly think of a question that may or may not be considered stupid. I feel that there are no stupid questions, however the way you ask a specific question can come across as stupid. The general approach of "why does my code not work?" is such a general question that may lead to others not answering it. Before you ask your question, you need to know the basics behind your problem. The goal, the approach or the guidelines of your problem must be specified or else someone may give you an answer for the wrong direction. Understanding how to ask questions is essential for every software engineer as tons of problems are bound to pop up. Knowing how to ask for help can easily improve your skills as a programmer.
 
-## What’s a smart question?
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+## How to ask the correct way
 
-```
-Q: python date of the previous month
+Looking at a website called StackOverflow, we can see multiple types of programming questions asked. Questions range from basic methods all the way to creating applications and complex code. To start, when asking for help you want to make sure that you haven't reposted a question that has been asked millions of times. Make sure to try and look up a potential solution on the web before you turn to asking a question that may have been asked already. Before asking, be sure to hink about the type of answer you hope to receive. The wording of the question can specify the type of thing you are looking for. Instead of asking "How can I fix my code?", instead try to ask "In the main function, I am receiving an error reffering to line x. I have tried...". Being very specific and providing the context of the situation can help the people trying to solve your problem. The more information your provide with your question, the easier it will be for you to get the answer you are looking for. 
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
-
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+A simple example can be seen here where someone just wants to know what "-->" does in C++.
 
 ```
-A: datetime and the datetime.timedelta classes are your friend.
+What is the "-->" operator in C++?
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
+After reading Hidden Features and Dark Corners of C++/STL on comp.lang.c++.moderated, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.
 
-Like this:
+Here's the code:
 
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
+#include <stdio.h>
+int main()
+{
+    int x = 10;
+    while (x --> 0) // x goes to 0
+    {
+        printf("%d ", x);
+    }
+}
+Output:
 
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
+9 8 7 6 5 4 3 2 1 0
+I'd assume this is C, since it works in GCC as well. Where is this defined in the standard, and where has it come from?
 ```
 
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+Despite being such a simple question where the user could have asked the question straight up, they provide context where that specific operator is being used along with sample output and specifying the code language. We can see by providing more details, it made it easier for others to understand the questions and deliver an adequate answer. 
 
-## Conclusion
+## Example of what NOT to do
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+StackOverflow does a decent job at deleting or filtering out questions that are considered "bad", so it is a lot rarer to find those types of questions. However, there are still lots of websites that have screenshotted or remember the horrific questions asked. Here is one of those examples.
+
+```
+here is my website: http://www.bbcsport-football.com/football
+
+I want to fetch array news descending by most vieweed, but it doesn't work for new news. This football website is very important for me so please any kind of help would be appreciated by me.
+
+sorry for my bad english.
+```
+
+Taking a first glimpse at this, we can see there is tons of information missing here. The user probably does not speak english as their first language, but that is no excuse to not provide any details behind the code. The user basically provides a link and asks how to implement some feature without the source code or background informatiom. Based off the link, we can assume that this may not even be their website. This is a question that can be interpreted in multiple ways, some may provide an example of code to implement. Other may explain how to do it through words through some random coding language. Unless you want to be banned by StackOverflow, refrain from asking these broad and open questions.
+
+As developers, we can not be expected to know everything. Asking for help is always encouraged but asking the right way makes the process easier for everyone. By asking the smart way, we can all get the answers we were looking for.
