@@ -10,6 +10,7 @@ labels:
   - Career
   - Software Engineering
   - Skills
+  - Change
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="../img/future.jpg">
