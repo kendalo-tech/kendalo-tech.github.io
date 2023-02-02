@@ -1,15 +1,15 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
-title: "Micromouse"
-date: 2015
-published: false
+image: img/SEF.png
+title: "Improving Generator Output Using Magnets"
+date: 2019
+published: true
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: "My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition."
+  - Engineering
+  - Science
+  - Science Fair
+summary: "This is my Science and Engineering Fair project from 2019. I presented this project at the state and district Science Fair."
 ---
 
 <div class="text-center p-4">
