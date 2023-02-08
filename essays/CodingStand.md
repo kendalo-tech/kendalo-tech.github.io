@@ -1,42 +1,32 @@
 ---
 layout: essay
 type: essay
-title: "Javascript is a Breath of Fresh Air"
+title: "Coding has Rules too"
 # All dates must be YYYY-MM-DD format!
-date: 2023-01-17
+date: 2023-02-07
 published: true
 labels:
   - Software Engineering
   - Coding
-  - Experience
+  - Standards
 ---
-
-
-*Javascript is quite simply put, the best coding language I have learned (so far).*
 
 
 <img width="350px" height = "250px" class="rounded float-start pe-4" src="../img/JavaScriptScale.png" >
 
 
-## **Javascript > Java**
+## **Since when did rules exist?**
 
-Going through college, and learning languages such as Java, C, and C++, it was easy to see that coding languages were very tedious and required very precise specifications when creating variables or functions. For example, a function would require a specific return type such as void, int, or string. Everyday struggles such as having to typecast a variable from one data type to another are now gone with Javascript. 
+Coding has been something that every computer science major has done, whether it be through homework, classwork, etc. When using an IDE such as Eclipse, the IDE tells you when there is a syntax error, a type mismatch, or any other small inconvenience that can stop your program from working. These may have been considered rules but not necessarily standards for coding. Coding standards are there to improve the quality and understanding of your code. Usually using a third-party source, code standards can help you see your code in a brand new light.
 
-As I started FreeCodeCamp, I expected Javascript to be your typical program with specific labels for everything. However, I was quickly proved wrong. One of the first tutorials shows you how to declare variables, and I was shocked to see that you had 2 options to choose from. 'let' and 'const' were the only two keywords that you would use to define a variable. I thought it was crazy how a variable could take either an integer or a string without being specified. 
+Following the coding standards results in clean and organized code. Imagine somebody reading a triple-nested for-loop without having indentation. It would be a complete mess, and the reader would not be able to understand what the program may do. Whether it is an employer or teammate, having clean code can really help speed up the process and allow both sides to understand what the program is doing. As you have always heard, "teamwork makes the dream work". 
 
-```
-let pi = 3.14;
-pi = '3.14';
-```
+Using Intellij, we were required to install something called ESLint. ESLint is a program that checks your code to make sure it follows the required standards. It will force you to fix the errors as they can be seen as a warning. I feel that ESLint is very helpful, however, when I am in the process of writing code it can be seen as very annoying. The amount of red squiggly marks I see while trying to create a function bothers me, forcing me to try and fix all the errors while writing the main contents of the function. When it gives me an error of not creating a new line at the end of the file, it causes annoyance and pain as I search through to see where one small red squiggly line is. 
 
-Imagine how easier it is to code things now that variables are not bounded to a specific data type. In both Java and C, this snippet of code would result in an error, and you would only be able to accept one datatype per variable. Javascript is a brand-new learning curve as there are a lot of different features from other languages, but (to me) the quality of life features are what separates it from the other languages.
+On the flip side, ESLint is very helpful with various things. An example would be that it tells you how you should label your variables based on how you use them. It may tell you to use 'let' or 'const' depending on the use which is very beneficial. It also stops you from creating useless variables. If there is a variable not being used, ESLint will highlight and say the variable is deemed useless. During a test such as a WOD, ESLint can easily pinpoint the area where my code is having a problem. Whether it be a missing bracket, semi-colon, or brace, ESLint will identify if any of the syntax provided is wrong. 
 
-## **Athletes behind screens**
+In the end, ESLint is a tool that has its ups and downs. As I have only worked with it for a week, it may be too early to tell whether its positives outweigh the negatives. I do think that there is more upside than downside, but it is all up to the user preference. At least I know my code will be formatted correctly and I get a bright green checkmark showing that ESLint has checked through it with no errors. Throughout the semester, I will get used to using ESLint and hopefully, it will help me become a greater software engineer.
 
-Athletic software engineering is a term that I never would have thought of. The words "athletic" + "engineering" are not really thrown together much. I can see the concept behind it and I understand that practice makes perfect. Athletic software engineering diverts towards doing more things yourself so that you learn better rather than just listening to someone talk for a whole hour. This style of learning is effective but especially in the beginning weeks it will create extra stress on the students to perform to the required standard. 
 
-## **The WOD**
-
-The dreaded, most feared, and most anticipated, the WOD. WOD stands for "workout of the day", meaning that you are required to put your newly developed skills to use. Just like any sport, you practice in order to be prepared for the actual event itself. Since WODs are timed, I feel that there will be a lot of pressure on students to feel like they need to perform. This comes with both upsides and downsides as it depends on the student. Some may feel it as extra motivation to study, while others may give up easier knowing they can not pass the upcoming WOD. 
 
 
