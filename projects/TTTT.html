@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Tricky Tic-Tac-Toe | Kendal Oya | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kendalo-tech.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kendal Oya | Professional Portfolio">
+    <meta property="og:url" content="https://kendalo-tech.github.io/projects/TTTT.html">
+    <meta property="og:title" content="Tricky Tic-Tac-Toe | Kendal Oya | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kendalo-tech.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/skyblue.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Tricky Tic-Tac-Toe | Kendal Oya | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kendal Oya</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Tricky Tic-Tac-Toe</h1>
+ <div class="text-center p-4">
+  <img width="200px" src="../img/TTTT.png" class="img-thumbnail" />
+  <img width="200px" src="../img/TTTT3.png" class="img-thumbnail" />
+  <img width="300px" src="../img/TTT4.png" class="img-thumbnail" />
+</div>
+
+<h2 id="overview"><strong>Overview</strong></h2>
+
+<p>Tricky Tic-Tac-Toe is a game that I programmed for my ICS111 class. This is just like standard Tic-Tac-Toe but after each player’s turn, there is a chance for a random square on the board to be cleared. The game is solely based off of RNG, having a 50% chance to remove a random space on the board completely makes the game uncontrollable. Creating such a game like this required a lot of different functions, along with knowing how to use the GUI that Java provides. Since it was one of the first programming courses, I had an extremely hard time using the GUI. When trying to draw lines or put things in the exact center, it was always a guessing game to myself. You can see that in the images, the two shapes are a tad bit off center due to myself having a hard time with the positioning.</p>
+
+<h2 id="the-code-behind"><strong>The Code Behind</strong></h2>
+
+<p>In this project, we needed to creat a GUI to display the Tic-Tac-Toe board along with coding an AI that will automatically place a character based on where the player went. The AI was not perfect however, it did know when the player only needed one more space to win. The AI had to know whether the game was won, lost, could be won, could be lost, along with which spaces were available. A lot of helper methods were made especially since spaces were constantly being deleted and then filled.</p>
+
+<p>These are three example methods that I used in to create this game. There was a lot of testing out arrays, along with using formulas to get the position values correct.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">boolean</span> <span class="nf">won</span><span class="p">(</span><span class="kt">char</span> <span class="n">player</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">testRow</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">rows</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">rows</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]))</span>
+                    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">boolean</span> <span class="n">testRow</span><span class="p">(</span><span class="kt">char</span> <span class="n">player</span><span class="p">,</span> <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">position</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span> <span class="o">&amp;&amp;</span> <span class="n">position</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span>
+                    <span class="o">&amp;&amp;</span> <span class="n">position</span><span class="p">[(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">player</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">void</span> <span class="n">nextMove</span><span class="p">()</span> <span class="p">{</span> <span class="c1">//ai</span>
+            <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">findRow</span><span class="p">(</span><span class="n">X</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">findRow</span><span class="p">(</span><span class="n">O</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">do</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">nextInt</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+                <span class="k">while</span> <span class="p">(</span><span class="n">position</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">!=</span> <span class="n">BLANK</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">position</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">;</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

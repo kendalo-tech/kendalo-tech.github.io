@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Sudoku Solver | Kendal Oya | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kendalo-tech.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kendal Oya | Professional Portfolio">
+    <meta property="og:url" content="https://kendalo-tech.github.io/projects/sudoku.html">
+    <meta property="og:title" content="Sudoku Solver | Kendal Oya | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kendalo-tech.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/skyblue.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Sudoku Solver | Kendal Oya | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kendal Oya</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Sudoku Solver</h1>
+ <p><img class="img-fluid" src="../img/sudokusolve.png" width="230" height="219" /></p>
+
+<p>This sudoku solver is one of the assignments that we were given in ICS211. The only requirement was that we needed to use recursion to solve the board. We were also given a function called ‘checkSudoku’, which would check if the board was valid and followed all the game cases. When doing this project, I felt that it was pretty difficult as recursion is a very hard topic. Understanding how recursion calls work along with how to navigate the sudoku board were the key components to this project.</p>
+
+<p>Here we can see some code from the ‘fillSudoku’ function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> public static boolean fillSudoku (int [] [] sudoku)
+  {
+    if(!checkSudoku(sudoku, false)) { return false; }
+    BitSet fixedVal = new BitSet(81); //9x9 board
+    for(int i = 0; i &lt; 9; i++) {
+      for(int j = 0; j &lt; 9; j++) {
+        if(sudoku[i][j] != 0) {
+          fixedVal.set(i*9+j);
+        }
+      }
+    }
+    int start = 0;
+    while(fixedVal.get(start)) {
+      start++;
+    }
+    if(start ==81) {
+      return true;
+    }
+    return fillSudokuAt(sudoku, start, fixedVal);
+  }
+
+</code></pre></div></div>
+
+<p>This part of the code was the initialization for the program. This would create a new sudoku board, then keep track of which spots were already full. It would then call the next recursively called function to fill out and guess the rest of the board. The recursively called funtion ‘fillSudokuAt’ would then guess values 1 through 9 for each spot until it guessed the value that satisfied all the sudoku conditions.</p>
+
+<p>Here is the code for the ‘fillSudokuAt’ function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> private static boolean fillSudokuAt(int[][] sudoku, int position, BitSet fixedVal) {
+    if(position == 81) { return checkSudoku(sudoku, false); }
+    int i = position/9;
+    int j = position % 9;
+    position++;
+    
+    while(fixedVal.get(position)) {
+      position++;
+    }
+    
+    for(int guess = 1; guess &lt; 10; guess++) {
+      sudoku[i][j] = guess;
+      
+      if(checkSudoku(sudoku, false)) {
+        if(fillSudokuAt(sudoku, position, fixedVal)) {
+          return true;
+        }
+      }
+      
+    }
+    sudoku[i][j] = 0;
+    return false;
+    
+  }
+
+
+</code></pre></div></div>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
