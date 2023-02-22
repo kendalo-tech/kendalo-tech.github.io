@@ -1,33 +1,37 @@
 ---
 layout: essay
 type: essay
-title: "Coding has Rules too"
+title: "UI is Understandably Irritating"
 # All dates must be YYYY-MM-DD format!
-date: 2023-02-07
+date: 2023-02-21
 published: true
 labels:
   - Software Engineering
-  - Coding
-  - Standards
+  - Web Development
+  - HTML
+  - CSS
+  - Bootstrap
 ---
 
 
-<img width="350px" height = "250px" class="rounded float-start pe-4" src="../img/standards.png" >
+<img width="350px" height = "250px" class="rounded float-start pe-4" src="../img/websnow.png" >
 
 
-## **Since when did rules exist?**
+## **Who decided to code this way?**
 
-Coding has been something that every computer science major has done, whether it be through homework, classwork, etc. When using an IDE such as Eclipse, the IDE tells you when there is a syntax error, a type mismatch, or any other small inconvenience that can stop your program from working. These may have been considered rules but not necessarily standards for coding. Coding standards are there to improve the quality and understanding of your code. Usually using a third-party source, code standards can help you see your code in a brand new light.
+Being introduced to web development seemed like something that would be fun, enjoyable, and easy. Now, I am not saying that it isn't those things, but there is a lot of pain and frustration while learning basic web development. Learning HTML and CSS, the basics seemed very straightforward. Things such as changing the color of fonts, the font type, or creating the title/headers were all very easy to understand. It was when we had to center certain pictures, align paragraphs, and create margins that everything went crashing downhill.
 
-Following the coding standards results in clean and organized code. Imagine somebody reading a triple-nested for-loop without having indentation. It would be a complete mess, and the reader would not be able to understand what the program may do. Whether it is an employer or teammate, having clean code can really help speed up the process and allow both sides to understand what the program is doing. As you have always heard, "teamwork makes the dream work". 
+## **Never use raw, always cooked**
 
-Using Intellij, we were required to install something called ESLint. ESLint is a program that checks your code to make sure it follows the required standards. It will force you to fix the errors as they can be seen as a warning. I feel that ESLint is very helpful, however, when I am in the process of writing code it can be seen as very annoying. The amount of red squiggly marks I see while trying to create a function bothers me, forcing me to try and fix all the errors while writing the main contents of the function. When it gives me an error of not creating a new line at the end of the file, it causes annoyance and pain as I search through to see where one small red squiggly line is. 
+When we were first tasked to create a website without the knowledge of Bootstrap, I never thought it would be so difficult to position a column or paragraph. Raw HTML and CSS require you to use all your brain power towards padding and display features. Creating columns, margins, and navbars are all headaches to make and frustrate you when they don't do exactly what you want. Given it was a brand new language to me, there were still multiple instances where I was frustrated because I could not understand how to align something. Investing the time to learn and use raw HTML and CSS will pay off as you will learn and be able to create custom pages without any issues. When starting, it is a steep learning curve that requires a lot of time and patience.
 
-On the flip side, ESLint is very helpful with various things. An example would be that it tells you how you should label your variables based on how you use them. It may tell you to use 'let' or 'const' depending on the use which is very beneficial. It also stops you from creating useless variables. If there is a variable not being used, ESLint will highlight and say the variable is deemed useless. During a test such as a WOD, ESLint can easily pinpoint the area where my code is having a problem. Whether it be a missing bracket, semi-colon, or brace, ESLint will identify if any of the syntax provided is wrong. 
+You are probably thinking to yourself if HTML and CSS are that bad, how do people do it? While some people are skilled enough to code raw HTML and CSS without any issues, there is something that we can all use to make our lives easier. Bootstrap is a CSS framework that allows us to use certain features to prevent some frustration. By using Bootstrap, some classes are available to you that make the website look better. For example, a container fixes the margins of the website so that its equally away from the edges. If you didn't have this class, you would need to find all the margin width and padding of each component. Bootstrap allows the user to create website features without all the agony and pain that come with it.
 
-## **Green Lights**
+I personally really enjoy having Boostrap. My least favorite thing about creating websites was having to fix the margins along with centering everything. Bootstrap easily fixes this with the custom classes it provides. Components such as navbars are also way easier to create as well, all by just naming your class as one of the Bootstrap classes. The level of difficulty is a lot less when you have classes that can format the webpage for you. While you still need to understand how to use it, it makes your life easier.
 
-In the end, ESLint is a tool that has its ups and downs. As I have only worked with it for a week, it may be too early to tell whether its positives outweigh the negatives. I do think that there is more upside than downside, but it is all up to the user preference. At least I know my code will be formatted correctly and I get a bright green checkmark showing that ESLint has checked through it with no errors. Throughout the semester, I will get used to using ESLint and hopefully, it will help me become a greater software engineer.
+## **The investment return**
+
+After you put in all this time and effort, what can you possibly get out of this? The ability to create stunning and high-quality websites is a skill that lots of companies will value. Despite causing endless amounts of frustration, learning how to create websites is a skill that software engineers should try to learn. Endless hours of hard work won't go unnoticed, as mastering HTML and CSS can find your success in the software industry.
 
 
 
