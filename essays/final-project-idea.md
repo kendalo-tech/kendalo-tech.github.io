@@ -23,6 +23,7 @@ Before every semester starts, students just want to know what to anticipate in t
 * Existing user goes to landing page, looks up the specified class
 * Existing user clicks on class, goes to class page
 * If existing user wants to leave a review, there will be an option on the class page 
+
 ## Beyond the basics
 * Email validation
 * UH ID Checking
