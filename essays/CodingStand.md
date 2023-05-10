@@ -4,7 +4,7 @@ type: essay
 title: "Coding has Rules too"
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-07
-published: true
+published: false
 labels:
   - Software Engineering
   - Coding

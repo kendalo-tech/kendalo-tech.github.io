@@ -4,7 +4,7 @@ type: essay
 title: "The Art of Code"
 # All dates must be YYYY-MM-DD format!
 date: 2023-04-26
-published: true
+published: false
 labels:
   - Software Engineering
   - Code
