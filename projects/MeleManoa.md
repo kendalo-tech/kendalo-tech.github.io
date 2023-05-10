@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/melemanoa.png
+image: img/melelogo.png
 title: "Mele Manoa"
 date: 2023
 published: true
