@@ -12,7 +12,7 @@ labels:
 ---
 
 
-<img width="350px" height = "250px" class="rounded float-start pe-4" src="../img/JavaScriptScale.png" >
+<img width="350px" height = "250px" class="rounded float-start pe-4" src="../img/reflection.png" >
 
 
 ## **Learning the Fundamentals**
