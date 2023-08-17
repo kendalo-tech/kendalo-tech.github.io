@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Mele Manoa | Kendal Oya | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kendalo-tech.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kendal Oya | Professional Portfolio">
+    <meta property="og:url" content="https://kendalo-tech.github.io/projects/MeleManoa.html">
+    <meta property="og:title" content="Mele Manoa | Kendal Oya | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kendalo-tech.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/skyblue.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Mele Manoa | Kendal Oya | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kendal Oya</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Mele Manoa</h1>
+ <p>Mele Manoa is a web application designed to help connect musicians at the University of Hawaii. This application creates an easy way to find others with similar music tastes as yourself. Along with finding other people, you can also connect with groups or bands that share the same interests. This was the final project for my ICS314 class, and we worked in a group of 4 people.</p>
+
+<p>In this project, we used GitHub to manage our code. Everyone was assigned their own assignments/tasks to do within the project. For myself, I was tasked with doing more fo the back-end type of things. The first task was just trying to create the collections that would store the users’ information. This was a fairly simple task but deciding what data would be in the collection was a little difficult at first. Since we had a login function for the user, we assumed that we could store the data in there, meaning no collection would be needed for the users. However, this was wrong and midway through the project we decided to change the users info to be stored inside a collection. I also created the group’s collection. That collection would store the information about all the different bands. They had data types that included genre, skill level, and the type of band they were.</p>
+
+<p>The major task I had for this project was creating the filter function for the groups and members page. For example, if someone only wanted to see people that played guitars, then it would only show those profiles. To start, it was difficult for me to understand how to connect buttons to the users’ data. It took a lot of watching guides and reading the React documents, but after figuring it out, I was able to get the user function working. Using components such as ‘useState’ and ‘onClick’ are very useful when creating a filter. I felt that my understanding of Javascript inside Meteor/Reacts was not very solid before this project, but after this I can say that I have a better understanding of how connecting the two languages work.</p>
+
+<p>This is the filter function for the ‘Discover’ page, we can that only profiles with the active filter are shown.</p>
+
+<p><img width="400px" class="rounded float-start pe-4" src="../img/filter.png" alt="Filter Image" /></p>
+
+<p>Here is the project homepage:
+https://mele-manoa.github.io/</p>
+
+<p>Here is the organization page:
+https://github.com/mele-manoa</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "basics": {
+    "name": "Kendal Oya",
+    "label": "Student",
+    "picture": "https://github.com/kendalo-tech.png",
+    "email": "kendalo@hawaii.edu",
+    "phone": "808-927-1220",
+    "website": "https://kendalo-tech.github.io",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2024.",
+    "location": { "address": "", "postalCode": "96797", "city": "Waipahu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "kendalo-tech", "url": "http://github.com/kendalo-tech" },
+      { "network": "linkedin", "username": "kendal-oya", "url": "http://linkedin.com/in/kendal-oya" }
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Game Development" },
+    { "name": "Web Development" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C","C++", "Java", "Javascript" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "Git/GitHub" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Spring, 2024)",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "Present",
+      "courses": [ "ICS 211: Data Structures", "ICS 241: Discrete Math II", "ICS 311: Algorithms", "ICS 314: Software Engineering", "EE 160: Programming for Engineers","EE 205: Object Oriented Programming","EE 260: Introduction to Digital Design", "EE 361: Digital Systems & Comp Design"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Target",
+      "position": "Guest Services Associate",
+      "website": "https://www.target.com",
+      "startDate": "2020-10-21",
+      "endDate": "2021-01-10",
+      "summary": "Help the customers with any issues they encountered, know how to return the customers items."
+      
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Student Advisory Board",
+      "website": "www.ieeeatuhm.org/sab",
+      "startDate": "2020-08-30",
+      "endDate": "2022-01-10",
+      "position": "Chair",
+      "summary": "The Student Advisory Board worked to implement the students concerns and suggestions."
+    },
+    {
+      "organization": "IEEE Student Branch",
+      "website": "www.ieeeatuhm.org/",
+      "startDate": "2020-08-30",
+      "endDate": "2022-01-10",
+      "position": "Board Member",
+      "summary": "IEEE contributes towards the students success. We try to engage the students with electrical and computer engineering opportunities."
+    }
+  ],
+  
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
